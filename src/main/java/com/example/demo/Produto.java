@@ -2,7 +2,7 @@ package com.example.demo;
 
 public class Produto {
 	private String nome;
-	private Company company;
+	private String cnpj;
 
 	public String getNome() {
 		return nome;
@@ -11,25 +11,23 @@ public class Produto {
 	public void setNome(String nome) {
 		this.nome = nome;
 	}
-
-	public Company getCompany() {
-		return company;
+	
+	public String getCnpj() {
+		return cnpj;
 	}
 
-	public void setCompany(Company company) {
-		this.company = company;
+	public void setCnpj(String cnpj) {
+		this.cnpj = cnpj;
 	}
 
 	public Produto() {
 		super();
 	}
 
-	public Produto(String nome, Company company) {
+	public Produto(String nome, String cnpj) {
 		super();
 		this.nome = nome;
-		this.company = company;
+		this.cnpj = cnpj;
 	}
-
-	
 
 }

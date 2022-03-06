@@ -1,12 +1,16 @@
 package com.example.demo;
 
+import java.util.ArrayList;
 import java.util.List;
 import java.util.Objects;
 
 public class Company {
 	private String nome;
+
 	private String cnpj;
 
+	private List<Produto> produtos = new ArrayList<>();
+	
 	public String getCnpj() {
 		return cnpj;
 	}
@@ -15,7 +19,11 @@ public class Company {
 		this.cnpj = cnpj;
 	}
 
-	private List<Produto> produtos;
+	public Company(String nome, String cnpj) {
+		super();
+		this.nome = nome;
+		this.cnpj = cnpj;
+	}
 
 	public String getNome() {
 		return nome;
