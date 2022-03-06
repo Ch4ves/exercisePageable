@@ -18,11 +18,17 @@ import org.springframework.web.bind.annotation.RestController;
 
 import com.fasterxml.jackson.databind.ObjectMapper;
 
+
+
+
 @RestController
 public class Poc {
 
 	private ModelMapper modelMapper;
 
+
+// 
+// 
 	private static String URL = "https://api.company.com.br/produtos";
 
 	private static String PAGESIZE = "?pageSize=";
